@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width" />
+    <title class="logo">@ViewBag.Title - My Psychologist Demo Page</title>
+    @Styles.Render("~/Content/PsychologistCSS")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("KAZAC THERAPIES", "Home", "Psychologist", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Home", "Psychologist")</li>
+                    <li>@Html.ActionLink("About", "About", "Psychologist")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Psychologist")</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav navbar-nav social-media-links pull-right">
+                <a href="https://www.facebook.com/" class="social-media-icon" title="Facebook">
+                    <img src="~/Images/Social Media/Facebook icon.png" />
+                </a>
+                <a href="https://www.linkedin.com/" class="social-media-icon" title="LinkedIn">
+                    <img src="~/Images/Social Media/LinkedIn Icon.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; My Psychologist Demo Page @DateTime.Now.Year | All Rights Reserved</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

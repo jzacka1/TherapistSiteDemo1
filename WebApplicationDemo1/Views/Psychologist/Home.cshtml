@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_PsychologistLayoutPage.cshtml";
+}
+
+<div id="image-carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#image-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#image-carousel" data-slide-to="1"></li>
+        <li data-target="#image-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        @*<div class="item active">
+            <img src="~/Images/Animals - Ocean Reef Fish Wallpapers - 0.1 Wallpaper 1024x768.jpg" width="600" height="315" alt="First Image" style="margin: 0 auto;" />
+            <div class="carousel-caption">
+                <h3>Identify your Troubles</h3>
+                <p>Find out what gives you unrest.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/Bucht_am_Golf_von_Neapel.jpg" width="600" height="315" alt="Second Image" style="margin: 0 auto;" />
+            <div class="carousel-caption">
+                <h3>Escape from Trauma</h3>
+                <p>Liberate yourself from the suffering you've endured</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/Images/Jellyfish.jpg" width="600" height="315" alt="Third Image" style="margin: 0 auto;" />
+            <div class="carousel-caption">
+                <h3>Restore your Life</h3>
+                <p>Get your life back before your troubles began.</p>
+            </div>
+        </div>*@
+        @*<div class="item active" style="background-image: url(http://placehold.it/400x400);">
+            <img src="http://placehold.it/400x400" />
+        </div>
+        <div class="item" style="background-image: url(http://placehold.it/400x400);">
+            <img src="http://placehold.it/400x400" />
+        </div>
+        <div class="item" style="background-image: url(http://placehold.it/400x400);">
+            <img src="http://placehold.it/400x400" />
+        </div>*@
+        <div class="item active" style="background-image: url('../Images/Animals - Ocean Reef Fish Wallpapers - 0.1 Wallpaper 1024x768.jpg');">
+            <img src="~/Images/Animals - Ocean Reef Fish Wallpapers - 0.1 Wallpaper 1024x768.jpg" alt="First Image" />
+            <div class="carousel-caption">
+                <h3>Identify your Troubles</h3>
+                <p>Find out what gives you unrest.</p>
+            </div>
+        </div>
+        <div class="item" style="background-image:url('../Images/Bucht_am_Golf_von_Neapel.jpg');">
+            <img alt="Second Image" src="~/Images/Bucht_am_Golf_von_Neapel.jpg" />
+            <div class="carousel-caption">
+                <h3>Escape from Trauma</h3>
+                <p>Liberate yourself from the suffering you've endured</p>
+            </div>
+        </div>
+        <div class="item" style="background-image:url('../Images/Jellyfish.jpg');">
+            <img alt="Third Image" src="~/Images/Jellyfish.jpg" />
+            <div class="carousel-caption">
+                <h3>Restore your Life</h3>
+                <p>Get your life back before your troubles began.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#image-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#image-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div> <!-- Carousel -->
+
+<h3>Looking for help?  You came to the right place!</h3>
+
+<p>Here at our office, we treat our patients well.  We offer our services in treating their trauma.</p>
+
+<p>The therapists who work there give their best efforts in treating their patients well.  Their backgrounds, training, and education make them
+    more than qualified in helping their patients.</p>
+
+<p>We wish that our patients can restore their life back.  If you seek help in treating
+    your PTSD, whether it's from physical abuse or combat stress, you've come to the right place.</p>
